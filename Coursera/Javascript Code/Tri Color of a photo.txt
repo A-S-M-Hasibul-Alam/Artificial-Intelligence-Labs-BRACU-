@@ -1,0 +1,19 @@
+// write your code here
+var pic = new SimpleImage("hilton.jpg");
+var w = pic.getWidth();
+//print(w);
+for (var pixel of pic.values()){
+    var x = pixel.getX();
+    //print(x);
+    //break;
+    if(x >= 0 && x < (w/3) ){
+        pixel.setRed(255);
+    }
+    else if(x >= (w/3) && x < (2*(w/3))){
+        pixel.setGreen(255);
+    }
+    else{
+        pixel.setBlue(255);
+    }
+}
+print(pic);

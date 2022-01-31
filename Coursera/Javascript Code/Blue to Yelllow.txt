@@ -1,0 +1,24 @@
+// write your code here
+var pic = new SimpleImage("duke_blue_devil.png");
+//var w = pic.getWidth();
+//print(w);
+for (var pixel of pic.values()){
+    //var x = pixel.getX();
+    //print(x);
+    //break;
+    if(pixel.getRed()==255 && pixel.getGreen()==255 && pixel.getBlue()==255){
+        
+    }
+    else{
+        pixel.setRed(255);
+        pixel.setGreen(255);
+        pixel.setBlue(0);
+    }
+    /*else if(x >= (w/3) && x < (2*(w/3))){
+        pixel.setGreen(255);
+    }
+    else{
+        pixel.setBlue(255);
+    }*/
+}
+print(pic);
